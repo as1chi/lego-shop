@@ -15,6 +15,8 @@ class Product {
             e.innerHTML = 'Добавить в корзину'
         }
 
+        headerPage.render(products.length)
+
     }
 
     render() {
