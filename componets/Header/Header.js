@@ -1,9 +1,13 @@
 class Header {
 
+    handlerOpenBasket() {
+        productBasket.render()
+    }
+
     render(count) {
         const html = `
             <div class = 'header-container'>
-                <div class = 'header-counter'>
+                <div class = 'header-counter' onclick = 'headerPage.handlerOpenBasket()'>
                     <img src="img/iconBasket.png" alt="basket" class = 'icon-basket'> 
                     ${count}
                 </div>
